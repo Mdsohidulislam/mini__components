@@ -1,0 +1,94 @@
+.filter__navbar__container {
+  background-color: white;
+  width: 280px;
+  margin-left: 40px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(4, 161, 82);
+  .head {
+    background-color: rgb(4, 161, 82);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 10px 8px 15px;
+    color: white;
+    margin: 0;
+  }
+  form {
+    background-color: green;
+
+    button {
+      position: absolute;
+    }
+
+    input {
+      position: relative;
+      width: 100%;
+      padding: 8px 10px;
+    }
+  }
+  .filter__navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .filter__navbar__items__container {
+      .filter__navbar__title {
+        margin: 0;
+        padding: 8px 10px 8px 12px;
+        background-color: white;
+        border-bottom: 3px solid rgb(4, 161, 82);
+        font-weight: 600;
+        position: relative;
+        cursor: pointer;
+        .show__or__hidden {
+          position: absolute;
+          right: 10px;
+          transition: all 0.8s;
+        }
+        .plus {
+          display: inline;
+          cursor: pointer;
+        }
+        .minus {
+          display: none;
+          cursor: pointer;
+        }
+      }
+      .filter__navbar__items {
+        margin: 0 0 0 0px;
+        padding: 0;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.8s;
+        li {
+          list-style: none;
+          color: grey;
+          position: relative;
+          padding: 10px 10px;
+          width: 100%;
+          cursor: pointer;
+          border-bottom: 0.5px solid rgb(4, 161, 82);
+          display: grid;
+          grid-template-columns: 10% 90%;
+          justify-content: center;
+          align-items: center;
+          label {
+            position: relative;
+            width: 100%;
+          }
+          .quantity {
+            color: gray;
+            padding: 4px;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.filter__navbar__title.active {
+}
